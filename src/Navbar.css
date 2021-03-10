@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+::root {
+  --primary: #fff;
+}
+:focus {
+  outline: none;
+}
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+
+  background-color: white;
+}
+.navbar-logo {
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+.search-bar {
+  width: 30rem;
+}
+input[type="search"] {
+  border-radius: 5px;
+  background: #ededed
+    url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat
+    9px center;
+  height: 31%;
+  background-color: #eef3f8;
+  padding: 10px;
+  padding-left: 31px;
+  border: none;
+  margin: 1rem;
+  width: 15em;
+  transition: all 0.5s;
+}
+input[type="search"]:focus {
+  width: 100%;
+}
+.navbar-menu {
+  display: flex;
+  width: 50rem;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+
+.navbar-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-item {
+  padding: 0px 20px;
+  text-align: center;
+}
+.navbar-item-link {
+  text-decoration: none;
+  color: rgb(99, 98, 98);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+a:hover {
+  color: black;
+}
+/* .navbar-item > a:active {
+  color: black;
+  border-bottom: 3px solid black;
+  padding-top: 6px;
+} */
+.navbar-item-link-active {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  border-bottom: 3px solid black;
+  padding-top: 3px;
+}
+
+/* .navbar-item:first-child::after {
+  content: "Home";
+  display: block;
+}
+.navbar-item::after:hover {
+  font-weight: 400;
+  border-bottom: 2px solid;
+  width: 5rem;
+}
+li.navbar-item::aftre:hover {
+  border-bottom: 2px solid;
+  width: 5rem;
+}
+.navbar-item:nth-child(2)::after {
+  content: "My Network";
+  display: block;
+}
+.navbar-item:nth-child(3)::after {
+  content: "Jobs";
+  display: block;
+}
+.navbar-item:nth-child(4)::after {
+  content: "Messaging";
+  display: block;
+}
+.navbar-item:nth-child(5)::after {
+  content: "Notifications";
+  display: block;
+} */
